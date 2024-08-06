@@ -131,6 +131,48 @@
     주소 : <input type="text" name="ordererAddress" size="50"> <br>
 
     <button>주문하기</button>
+	</form>
+
+<hr><hr>
+<h1>피자 주문하기</h1>
+<form action="/pizza" method="GET">
+
+	피자 선택
+	<select name="pizza">
+		<option value="치즈피자">치즈 피자 (10000)</option>
+		<option value="고구마피자">치즈 피자 (12000)</option>
+		<option value="하와이안피자">치즈 피자 (12000)</option>
+		<option value="페퍼로니피자">치즈 피자 (15000)</option>
+		<option value="바베큐피자">치즈 피자 (20000)</option>
+	</select>
+
+	<br>
+
+	크러스트 :
+	치즈 <input type="radio" name="type" value="cheese">
+	/
+	고구마 <input type="radio" name="type" value="sweet potato">
+
+	<br>
+
+	기타 옵션 <br>
+	<input type="checkbox" name="opt" value="피클">
+	피클 추가 (+500)
+	<br>
+
+	<input type="checkbox" name="opt" value="디핑 소스">
+	디핑 소스 추가(+500)
+
+	<input type="checkbox" name="opt" value="콜라"> 
+	콜라 추가(+1000)
+
+	<br>
+	주문자명 : <input type="text" name="ordererName"> <br>
+  주소 : <input type="text" name="ordererAddress" size="50"> <br>
+
+	<button>주문 하기</button>
+
+</form>
 
 
 
@@ -140,7 +182,9 @@
 
 
 
-		</form>
+
+
+
 
 
 
