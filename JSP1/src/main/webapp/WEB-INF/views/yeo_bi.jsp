@@ -18,6 +18,8 @@
 
     <div>
       취업 : ${param.Employment}
+      <br>
+      희망직종 : ${param.gob}
     </div>
   
 </body>
