@@ -11,9 +11,13 @@
 
     
     <div>
-      취업 : <%= request.getParameter("name") %>
+      취업 : <%= request.getParameter("Employment") %>
       <br>
       age : <%= request.getParameter("age") %>
+    </div>
+
+    <div>
+      취업 : ${param.Employment}
     </div>
   
 </body>
