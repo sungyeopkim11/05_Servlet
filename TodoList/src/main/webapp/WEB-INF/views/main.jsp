@@ -50,7 +50,12 @@
           <th>${vs.count}</th>
 
           <td>
-            <a href="#"> ${todo.title}</a>
+            <%-- 제목 클릭 시
+              인덱스 번호를 이용하여 todoList의
+              인덱스 번째 요소  내용을 조회하기
+              (쿼리스트링 이용 : 주소?K=V$K=V$...)
+             --%>
+            <a href="/todo/detail?index=${vs.index}"> ${todo.title}</a>
           </td>
 
           <%-- 완료 여부 --%>
@@ -82,9 +87,7 @@
 
               
 
-  ${todoList}
-  <hr>
-  ${completeCount}
+  
 
   <script src="/resources/js/main.js"></script>
 </body>
